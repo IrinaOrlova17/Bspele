@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <link rel="stylesheet" href="file.css" type="text/css" />
+ 
+    
+    <title>Top_10</title>
+</head>
+<body>
+<div class="werty">
+<div id="header">
+<img src="ziedi1.jpg" alt="MDN logo">  <h1 align=center> Atmiņas spēle </h1>
+</header>
+  <h3> 
+   Spēlētāju top-10
+  </h3> 
+    <center>
+            <table>
+                <thead>
+                    <th>Vārds</th>
+                    <th>Laiks</th>
+                </thead>
+                <tbody id="rezultati">
+                    <tr>
+                        <td colspan="2">Pagaidām nav rezultātu</td>
+                    </tr>
+                </tbody>
+            </table>
+        <b><a href="qqqq1.html">Atpakaļ</a></b>
+        </center>
+    </body>
+    <script type="text/javascript">
+        document.onreadystatechange = function () {
+            if (document.readyState == 'complete') {
+                fetch("https://burtuspelesserveris.anitagudkova.repl.co/spele/rezultati")
+                    .then(response => response.json())
+                    .then(function (response) {
+                        var tableBody = "";
+                        for (var i = 0; i < response.length; i++) {
+                            tableBody += "<tr><td>" + response[i].vards + "</td><td>" + response[i].laiks + "</td></tr>";
+                        }
+                        document.getElementById("rezultati").innerHTML = tableBody;
+                    });
+            }
+        }
+    </script>
+ <div id="r">
+ <h4><a href="qqqq1.html">Atpakaļ</a> </h4>
+<h4><a href="index.html">Atpakaļ</a></h4>
+<div id="footer">
+Author: Irina Orlova
+  <a href="mailto:iro4ka.1702@gmail.com">gmail.com</a>
+</div>
+</body>
+</html>

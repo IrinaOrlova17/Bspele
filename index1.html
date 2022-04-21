@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="style.css" rel="stylesheet"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atmiņas spēlestests</title>
+</head>
+<body>
+<div class="wrapper">
+    <div class="header">
+        <h1>
+            <a href="index.html">
+            Atmiņas spēles
+            </a>
+        </h1>
+        <ul>
+            <li>
+                <a href="spele.html">
+                Spēle
+                </a>
+            </li>
+            <li>
+                <a href="pspele.html">
+                Pielāgota Spēle                      
+                </a>
+            </li>
+            <li>
+                <a href="top.html">
+                Tops
+                </a>
+            </li>
+            <li>
+                <a href="par.html">
+                Par autoru
+                </a>
+            </li>
+        </ul>
+    </div><!--beidzas header-->
+    <div class="content">
+        <h3 class="virsraksts">Noteikumu teksts</h3>
+        Vārds: <input id="vards"/>
+        <p />
+        Vecums: <input id="vecums"/>
+        <p />
+        Reģions:
+        <select id="regions">
+            <option value="Vidzeme">Vidzeme</option>
+            <option value="Latgale">Latgale</option>
+            <option value="Kurzeme">Kurzeme</option>
+        </select>
+        <button onclick="saktSpeli()">Sākt</button>
+
+    </div>
+  
+    </div><!--beidzas wrapper-->
+<script>
+    function saktSpeli()
+    {
+        let vards=document.querySelector('#vards').value
+        let vecums=document.querySelector('#vecums').value
+        let regions=document.querySelector('#regions').value
+
+        console.log(vecums)
+        if(vards == '')
+        {
+           alert ('Ievadi vārdu')
+        }
+        else 
+        {
+            window.location='spele.html#'+vards+','+vecums+','+regions
+        }
+     }//beidzas saktSpeli()
+    /*
+  let vards;
+  const valsts="Latvija";  
+  vards="Laura"
+  let vards2 = `Pēteris ir 
+  labais!!!`
+  let klase = ['Jānis','Laura', 'Pēteris']
+    klase[3] = 'Ūģis'
+    let skolens = {
+        vards:'Jānis',
+        vecums:16,
+        'patīk datori': 'jā'
+    }
+    skolens['vards']
+
+
+    let json = [
+            {
+                vards: 'Jānis',
+                vecums:16
+            },
+            {
+                vards: 'Jana',
+                vecums:16
+            }
+    ]
+    console.log('beigas ir')
+    document.querySelector('.virsraksts').innerHTML = 'abc'
+*/
+</script>
+</body>
+</html>
