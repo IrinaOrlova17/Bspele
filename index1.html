@@ -1,43 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <link href="style.css" rel="stylesheet"/>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atmiņas spēlestests</title>
+     <link rel="stylesheet" href="file.css" type="text/css" />
+ 
+    
+    <title>Par autoru</title>
 </head>
 <body>
-<div class="wrapper">
-    <div class="header">
-        <h1>
-            <a href="index.html">
-            Atmiņas spēles
-            </a>
-        </h1>
-        <ul>
-            <li>
-                <a href="spele.html">
-                Spēle
-                </a>
-            </li>
-            <li>
-                <a href="pspele.html">
-                Pielāgota Spēle                      
-                </a>
-            </li>
-            <li>
-                <a href="top.html">
-                Tops
-                </a>
-            </li>
-            <li>
-                <a href="par.html">
-                Par autoru
-                </a>
-            </li>
-        </ul>
-    </div><!--beidzas header-->
+<div class="werty">
+<div id="header">
+<img src="ziedi1.jpg" alt="MDN logo">  <h1 align=center> Atmiņas spēle </h1>
+</header>
+</div>
     <div class="content">
         <h3 class="virsraksts">Noteikumu teksts</h3>
         Vārds: <input id="vards"/>
@@ -50,10 +24,16 @@
             <option value="Latgale">Latgale</option>
             <option value="Kurzeme">Kurzeme</option>
         </select>
-        <button onclick="saktSpeli()">Sākt</button>
+       <p align=center> <button onclick="saktSpeli()">Sākt</button>
 
+<div id="r">
+ <h4><a href="index.html">Atpakaļ</a></h4>
+<div id="footer">
+Author: Irina Orlova
+  <a href="mailto:iro4ka.1702@gmail.com">gmail.com</a>
     </div>
-  
+   
+
     </div><!--beidzas wrapper-->
 <script>
     function saktSpeli()
@@ -69,7 +49,7 @@
         }
         else 
         {
-            window.location='spele.html#'+vards+','+vecums+','+regions
+            window.location='pelagSpele.html#'+vards+','+vecums+','+regions
         }
      }//beidzas saktSpeli()
     /*
@@ -102,5 +82,6 @@
     document.querySelector('.virsraksts').innerHTML = 'abc'
 */
 </script>
+
 </body>
 </html>

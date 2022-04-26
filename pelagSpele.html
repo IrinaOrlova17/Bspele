@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <link rel="stylesheet" href="file.css" type="text/css" />
+    <link href="style.css" rel="stylesheet"/>
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Pielāgotā spēle</title>
+</head>
+<body>
+<div class="werty">
+<div id="header">
+<img src="ziedi1.jpg" alt="MDN logo">  <h1 align=center> Pielāgotā spēle </h1>
+</header>
+</div>
+
+<div class="content">
+  <h3 class="virsraksts">Sveiks</h3>
+
+  <div class="game">
+      <div class="block" id="L0" onclick="veiktGajienu('L0')">
+          <div>✨</div>
+      </div>
+      <div class="block" id="L1" onclick="veiktGajienu('L1')">
+          <div>🎄</div>
+      </div>
+     <div class="block" id="L2" onclick="veiktGajienu('L2')">
+         <div>☘️</div>
+      </div>
+      <div class="block" id="L3" onclick="veiktGajienu('L3')">
+          <div>☘️</div>
+      </div>
+      <div class="block" id="L4" onclick="veiktGajienu('L4')">
+          <div>🎄</div>
+      </div>
+      <div class="block" id="L5" onclick="veiktGajienu('L5')">
+          <div>✨</div>
+      </div>
+   </div>    
+</div>
+ <div id="r">
+ <h4><a href="index.html">Atpakaļ</a></h4>
+<div id="footer">
+Author: Irina Orlova
+  <a href="mailto:iro4ka.1702@gmail.com">gmail.com</a>
+</div>
+
+</div><!--beidzas wrapper-->
+<script>
+let laukumsSaturs = ['✨','🎄','☘️','☘️','🎄','✨']
+let atvertieLaukumi = []
+let pedejieDivi = []
+
+function veiktGajienu(laukums)
+{
+  let atvertsJaunsLaukums = false;
+  console.log(laukums)
+  if(atvertieLaukumi.lastIndexOf(laukums) == -1)
+  {
+      atvertsJaunsLaukums=true
+  }
+  else
+  {
+      atvertsJaunsLaukums = false
+  }
+  
+  if(atvertsJaunsLaukums)
+  {
+  document.querySelector('#'+laukums+' div').style.display="block"
+      atvertieLaukumi.push(laukums)
+  }
+  if(pedejieDivi.length == 2)
+  {
+    let atverts1 = pedejieDivi[0].replase ('L','')
+    let atverts2 =pedejieDivi[1].replase ('L','')
+    atverts1 = parseInt(atverts1,10)
+    atverts2 = parseInt(atverts2,10)
+    if(laukumsSaturs[atverts1] == laukumsSaturs[atverts2])
+    {
+      console.log('atvērti vienādi')
+      atvertieLaukumi.push(pedejieDivi[0],pedejieDivi[1])
+    }
+    else
+    {
+        console.log('nav atvērti vienādi')
+        document.querySelector('#'+pedejieDivi[0]+' div').style.opacity=0.1
+        document.querySelector('#'+pedejieDivi[1]+' div').style.opacity=0.1
+
+        setTimeout( function(){}    ,500      )
+    }
+   pedejieDivi = []
+
+  }
+  
+  if(laukumsSaturs.length == atvertieLaukumi.length)
+  {
+      alert('Apsveicam!')
+  }
+}
+</script>
+</body>
+</html>
