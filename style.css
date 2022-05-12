@@ -1,4 +1,38 @@
-body {font-family: Verdana, sans-serif}
+body {font-family: Verdana, sans-serif} */
+/* body
+ {
+    background: url(a1.jpg);
+} */
+/* .wrapper
+{
+background: rgb(224, 227, 240);
+width: 500px;
+height:500px;
+border: 1px solid rgb(167, 172, 197);
+padding: 20px;
+margin:auto;
+
+    /*zemāk paraugs vertik. un horizont. centrēšanai*/
+    position: absolute;
+    top:50%; margin-top:-250px;
+    left: 50%; margin-left:-250px;
+
+    /*bonus dekorācijas*/
+    font-family: Arial, Helvetica, sans-serif; /*fonti*/
+    border-radius: 10px; /*apaļi stūri*/
+    box-shadow: 3px 3px 15px#5E0000; /*ēna*/
+    opacity: 0.5; /*caurspīdīgums*/
+ */
+.chataZinas
+{
+  background: whitesmoke;  
+  height: 300pt;
+  color:rgb(124, 8, 8);
+  padding: 5px;
+  overflow:scroll
+}
+
+
 div.werty {margin: 0.5em; border: thin solid; padding: 0.5em;
     background: #EFF; color: black; box-shadow: 0 0 0.25em #033;
      width: 800px; margin-left: auto;
@@ -42,6 +76,12 @@ a:visited {color: #23073b}
 	width: 600px;       /*➕*/
 	margin-left: auto;  /*➕*/
 	margin-right: auto; /*➕*/
+
+    /*bonus dekorācijas*/
+    font-family: Arial, Helvetica, sans-serif; /*fonti*/
+    border-radius: 12px; /*apaļi stūri*/
+    box-shadow: 3px 3px 15px#5E0000; /*ēna*/
+    opacity: 0.8; /*caurspīdīgums*/
 }
 
 /* h1
@@ -49,7 +89,7 @@ a:visited {color: #23073b}
     text-align: center;
     background:#5BBCFF;
 	padding: 5px;       /*➕*/
-} */
+ */
 
 ul
 {

@@ -1,10 +1,15 @@
 <html>
 <head>
-<title> Atmiņas spēle</title>
-<script src="spele.js" type="text/javascript"></script>
-</head>
-
 <link rel="stylesheet" href="file.css" type="text/css" />
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<script src="spele.js" type="text/javascript"></script>
+<title> Atmiņas spēle</title>
+</head>
+<body>
 
 <div class="werty">
 <div id="header">
@@ -17,6 +22,7 @@
 <li><a href="index1.html">pielāgotā spēle</a></li>
 <li><a href="top.html">top spēlētāji</a></li>
 <li><a href="autors.html">par autoru</a></li>
+<li><a href="chat.html">Terzētava</a></li>
 </ul>
 </div>
 <div id="l">
@@ -25,27 +31,8 @@
                 <br>
 </div>
 
-
-
-
  <div id="footer">
 Author: Irina Orlova
   <a href="mailto:iro4ka.1702@gmail.com">gmail.com</a>
 </div>
-
-
-
-
-<script>
-  document.onreadystatechange = function() {
-      if (document.readyState == 'complete') {
-          let params = window.location.hash.split(',');
-          if(params[0]){
-              document.getElementById("speletajs").textContent = params[0];
-          }
-      }
-  }
-</script>
-<script src="chat.js" type="text/javascript"></script>
-
 </html>
