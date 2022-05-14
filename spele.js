@@ -10,7 +10,7 @@ function startSpele() {
     rezultatsIndex = 0;
     document.getElementById("rezultats").textContent = "";
 
-    fetch('https://replit.com/@IrinaOrlova3/BSpele/random-vards')
+    fetch('https://BurtuSpelesServeris.irinaorlova3.repl.co/random-vards')
         .then((response) => {
             return response.text().then((text) => {
                 pVards = text;
@@ -79,7 +79,7 @@ function beigaSpele() {
             laiks: rezultatsLaiks
         };
 
-        fetch('https://replit.com/@IrinaOrlova3/BSpele/speletaja-rezultats', {
+        fetch('https://BurtuSpelesServeris.irinaorlova3.repl.co/speletaja-rezultats', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json;charset=utf-8'
