@@ -17,12 +17,25 @@
     
 <div class="content">
    <p align=center>
-  <button onclick="saktSpeli()"><b>Sāksim spēli!</button></b></button></p>
-        
+      
+  <button onclick="startSpele();">Sāksim spēli!</button></b></p>
+  <br>
+  <br>
+          
+  <div id="sakumVards" class="spele" style="display: none;">
+  </div>
+  
+  <p id="resultatsLabel" style="display: none;">Rezultāts</p>
+
+  <div id="resultVards" class="spele" style="display: none;">
+  </div>
+
+  <p id="rezultats"></p>
+
 
     <script>
 
-        function saktSpeli() {
+        function startSpele() {
             let vards = document.querySelector('#vards').value
             let vecums = document.querySelector('#vecums').value
             let regions = document.querySelector('#regions').value

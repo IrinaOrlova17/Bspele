@@ -4,7 +4,7 @@ var rezultatsIndex = 0;
 var startsLaiks;
 var izmantotiBurti = [];
 
-function startSpele() {
+function saktSpeli() {
 
     startsLaiks = Date.now();
     rezultatsIndex = 0;
