@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-     <!-- <link rel="stylesheet" href="file.css" type="text/css" />  -->
+     <!-- <link rel="stylesheet" href="file.css" type="text/css" /> -->
      <link href="style.css" rel="stylesheet"/>
-    <script src="script_spele.js" type="text/javascript"></script_spele>
-
+    
     <title>Par autoru</title>
 </head>
 <body>
@@ -25,7 +24,7 @@
             <option value="Latgale">Latgale</option>
             <option value="Kurzeme">Kurzeme</option>
         </select>
-       <p align=center> <button onclick="saktSpeli();">STARTS</button>
+       <p align=center> <button onclick="saktSpeli()">Sākt</button>
 
 <div id="r">
  <h4><a href="index.html">Atpakaļ</a></h4>
@@ -36,52 +35,23 @@ Author: Irina Orlova
    
 
     </div><!--beidzas wrapper-->
-<script src="script_spele.js">
-//     function saktSpeli()
-//     {
-//         let vards=document.querySelector('#vards').value
-//         let vecums=document.querySelector('#vecums').value
-//         let regions=document.querySelector('#regions').value
+<script>
+    function saktSpeli()
+    {
+        let vards=document.querySelector('#vards').value
+        let vecums=document.querySelector('#vecums').value
+        let regions=document.querySelector('#regions').value
 
-//         console.log(vecums)
-//         if(vards == '')
-//         {
-//            alert ('Ievadi vārdu')
-//         }
-//         else 
-//         {
-//             window.location='pelagSpele.html#'+vards+','+vecums+','+regions
-//         }
-//      }//beidzas saktSpeli()
-
-//   let vards;
-//   const valsts="Latvija";  
-//   vards="Laura"
-//   let vards2 = `Pēteris ir 
-//   labais!!!`
-//   let klase = ['Jānis','Laura', 'Pēteris']
-//     klase[3] = 'Ūģis'
-//     let skolens = {
-//         vards:'Jānis',
-//         vecums:16,
-//         'patīk datori': 'jā'
-//     }
-//     skolens['vards']
-
-
-//     let json = [
-//             {
-//                 vards: 'Jānis',
-//                 vecums:16
-//             },
-//             {
-//                 vards: 'Jana',
-//                 vecums:16
-//             }
-//     ]
-//     console.log('beigas ir')
-//     document.querySelector('.virsraksts').innerHTML = 'abc'
-
+        console.log(vecums)
+        if(vards == '')
+        {
+           alert ('Ievadi vārdu')
+        }
+        else 
+        {
+            window.location='pelagSpele.html#'+vards+','+vecums+','+regions
+        }
+     }//beidzas saktSpeli()
 </script>
 
 </body>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- <link rel="stylesheet" href="file.css" type="text/css" /> -->
+    <link href="style.css" rel="stylesheet"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pielāgotā spēle</title>
+</head>
+<body>
+<div class="werty">
+	<div id="header">
+	<img src="ziedi1.jpg" alt="MDN logo">  <h1 align=center> Pielāgotā spēle </h1>
+	</header>
+	</div>
+    
+<div class="content">
+   <p align=center>
+  <button onclick="saktSpeli()"><b>Sāksim spēli!</button></b></button></p>
+        
+
+    <script>
+
+        function saktSpeli() {
+            let vards = document.querySelector('#vards').value
+            let vecums = document.querySelector('#vecums').value
+            let regions = document.querySelector('#regions').value
+
+            console.log(vards + " " + vecums + " " + regions)
+
+            if (vards == '' && vards == ' ') {
+                alert('Ievadi vārdu')
+            } else {
+                window.location = 'index3.html#' + vards + ',' + vecums + ',' + regions
+            }
+
+        } 
+    </script>
+
+ <div id="r">
+ <h4><a href="index.html">Atpakaļ</a></h4>
+<div id="footer">
+Author: Irina Orlova
+  <a href="mailto:iro4ka.1702@gmail.com">gmail.com</a>
+</div>
+
+</div><!--beidzas wrapper-->
+<script src="script_spele.js">
+
+</script>
+</body>
+</html>
