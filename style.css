@@ -83,7 +83,24 @@ a:visited {color: #23073b}
     box-shadow: 3px 3px 15px#5E0000; /*ēna*/
     opacity: 0.8; /*caurspīdīgums*/
 }
-
+.spele {
+    display: inline-block;
+    background: rgba(234, 168, 54, 0);
+    font-size: 16px;
+    text-align:center;
+    padding:6px 2px 2px 2px;
+}
+.izmantotsBurts{
+    color:rgb(242, 238, 234);
+}
+table{
+    border: 2px solid rgb(96, 110, 211);
+    width: 20%;
+    height: 20px;
+    margin: auto;
+    text-align: center;
+    background-color: white;
+}
 /* h1
 {
     text-align: center;
@@ -120,11 +137,11 @@ li
 .block
 {
     display: inline-block;
-    background: crimson;
-    width: 100px;
-    height: 100px;
-    border:1px solid rgb(116, 1, 1);
-	text-align: center;  /*➕*/
+    background: rgba(220, 173, 20, 0.957);
+    width: 50px;
+    height: 50px;
+    border:1px solid rgb(82, 17, 172);
+    text-align: center;  /*➕*/
 	margin:5px;          /*➕*/
 	font-size: 45px;     /*➕*/
     vertical-align: top;
