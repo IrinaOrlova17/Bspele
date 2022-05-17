@@ -25,7 +25,7 @@
             <option value="Latgale">Latgale</option>
             <option value="Kurzeme">Kurzeme</option>
         </select>
-       <p align=center> <button onclick="saktSpeli()">Sākt</button>
+       <p align=center> <button onclick="startSpele()">Sākt</button>
 
 <div id="r">
  <h4><a href="index.html">Atpakaļ</a></h4>
@@ -37,24 +37,20 @@ Author: Irina Orlova
 
     </div><!--beidzas wrapper-->
 <script>
-    function saktSpeli()
-    {
-        let vards=document.querySelector('#vards').value
-        let vecums=document.querySelector('#vecums').value
-        let regions=document.querySelector('#regions').value
+    function startSpele() {
+    let vards = document.querySelector('#vards').value
+    let vecums = document.querySelector('#vecums').value
+    let regions = document.querySelector('#regions').value
 
-        console.log(regions)
-        if(vards == '')
-        {
-           alert ('Ievadi vārdu')
-        }
-        else 
-        {
-            window.location='pelagSpele1.html#'+vards+','+vecums+','+regions
+    console.log(vards + " " + vecums + " " + regions)
+
+    if (vards == '' && vards == ' ') {
+        alert('Ievadi vārdu')
+    } else {
+        window.location='pelagSpele1.html#' + vards + ',' + vecums + ',' + regions
+       
         }
      }//beidzas saktSpeli()
-
-
 
 </script>
 

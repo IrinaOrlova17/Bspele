@@ -28,31 +28,16 @@
   <div id="sakumVards" class="spele" style="display: none;">
   </div>
   
-  <p id="resultatsLabel" style="display: none;">Rezultāts</p>
+  <p id="resultatsLabel" style="display: none;" align=center>Rezultāts</p>
 
   <div id="resultVards" class="spele" style="display: none;">
   </div>
+  <br>
+  <br>
+  <p id="rezultats" align=center></p>
 
-  <p id="rezultats"></p>
 
-
-    <script>
-
-        function startSpele() {
-            let vards = document.querySelector('#vards').value
-            let vecums = document.querySelector('#vecums').value
-            let regions = document.querySelector('#regions').value
-
-            console.log(vards + " " + vecums + " " + regions)
-
-            if (vards == '' && vards == ' ') {
-                alert('Ievadi vārdu')
-            } else {
-                window.location = 'index.html#' + vards + ',' + vecums + ',' + regions
-            }
-
-        } 
-    </script>
+   
 
  <div id="r">
  <h4><a href="index.html">Atpakaļ</a></h4>

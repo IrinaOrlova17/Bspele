@@ -84,6 +84,7 @@ a:visited {color: #23073b}
     opacity: 0.8; /*caurspīdīgums*/
 }
 .spele {
+   
     display: inline-block;
     background: rgba(234, 168, 54, 0);
     font-size: 16px;
@@ -136,6 +137,7 @@ li
 }
 .block
 {
+    
     display: inline-block;
     background: rgba(220, 173, 20, 0.957);
     width: 50px;
